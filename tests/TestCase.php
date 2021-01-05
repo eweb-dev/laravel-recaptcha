@@ -18,8 +18,7 @@ use Orchestra\Testbench\TestCase as OrchestraTestCase;
  * Class TestCase
  * @package Biscolab\ReCaptcha\Tests
  */
-class TestCase extends OrchestraTestCase
-{
+class TestCase extends OrchestraTestCase {
 
 	/**
 	 * Load package alias
@@ -28,8 +27,7 @@ class TestCase extends OrchestraTestCase
 	 *
 	 * @return array
 	 */
-	protected function getPackageAliases($app)
-	{
+	protected function getPackageAliases($app) {
 
 		return [
 			'ReCaptcha' => ReCaptcha::class,
@@ -43,8 +41,7 @@ class TestCase extends OrchestraTestCase
 	 *
 	 * @return array
 	 */
-	protected function getPackageProviders($app)
-	{
+	protected function getPackageProviders($app) {
 
 		return [ReCaptchaServiceProvider::class];
 	}
